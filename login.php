@@ -25,8 +25,8 @@ if(isset($_POST['sub'])){
         <title></title>
     </head>
     <body>
-        
-        <h1> login </h1>
+
+        <h1> login - hello</h1>
 
         <form method="POST" enctype="multipart/form-data">
             <table>
