@@ -11,6 +11,7 @@ $_SESSION["animal"] = "gato";
 $_SESSION["comida"] = "batata";
 $_SESSION["nome"] = "Rafner";                                 
 echo "Session variables are set.";
+
 ?>
 
 </body>
