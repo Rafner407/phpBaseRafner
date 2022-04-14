@@ -1,6 +1,6 @@
 <?php
 include 'connect.php';
-$sq="delete from city where idCity=7";
+$sq="delete from city where idCity=8";
 mysqli_query($con,$sq);
 header('location:viewall_city.php');
 ?>
@@ -41,7 +41,7 @@ while($f=  mysqli_fetch_assoc($qu)){
             <?php echo $f['nameCity']?>
         </td>
         <td>
-            <a href="delete_city.php"> remover</a>
+            <a href="delete_city.php&idCity=8"> remover</a>
         </td>
     </tr>
     <?php
