@@ -1,14 +1,17 @@
 <?php
 include 'connect.php';
 ?>
-<a href="reg_city.php"> Editar </a>
+<a href="reg_produto.php"> Editar </a>
 <table border='1'>
     <tr>
         <th>
             Id
         </th>
         <th>
-            Username
+            Produto
+        </th>
+        <th>
+            Categoria
         </th>
         <th>
             Excluir
@@ -16,19 +19,22 @@ include 'connect.php';
     </tr>
 
 <?php
-$sq="select * from city";
+$sq="select * from produto";
 $qu=mysqli_query($con,$sq);
 while($f=  mysqli_fetch_assoc($qu)){
     ?>
     <tr>
         <td>
-            <?php echo $f['idCity']?>
+            <?php echo $f['idProduto']?>
         </td>
         <td>
-            <?php echo $f['nameCity']?>
+            <?php echo $f['nomeProduto']?>
         </td>
         <td>
-            <a href="delete_city.php"> remover </a>
+            <?php echo $f['fk_idCategoria']?>
+        </td>
+        <td>
+            <a href="delete_produto.php"> remover </a>
         </td>
     </tr>
     <?php
