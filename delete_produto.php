@@ -1,6 +1,7 @@
 <?php
 include 'connect.php';
-$sq="delete from produto where idProduto=18";
+$id = $_GET['id'];
+$sq="delete from produto where idProduto=35";
 mysqli_query($con,$sq);
-header('location:viewall_produto.php');
+header('location:viewall_product.php');
 ?>

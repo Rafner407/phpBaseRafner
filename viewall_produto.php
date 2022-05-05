@@ -11,10 +11,16 @@ include 'connect.php';
             Produto
         </th>
         <th>
+            Preço
+        </th>
+        <th>
             Categoria
         </th>
         <th>
             Excluir
+        </th>
+        <th>
+            Editar
         </th>
     </tr>
 
@@ -31,10 +37,16 @@ while($f=  mysqli_fetch_assoc($qu)){
             <?php echo $f['nomeProduto']?>
         </td>
         <td>
+            <?php echo $f['precoProduto']?>
+        </td>
+        <td>
             <?php echo $f['fk_idCategoria']?>
         </td>
         <td>
             <a href="delete_produto.php"> remover </a>
+        </td>
+        <td>
+            <a href="edit_produto.php?idProduto = <?php echo $f['idProduto']?>"> editar </a>
         </td>
     </tr>
     <?php
