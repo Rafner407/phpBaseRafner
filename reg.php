@@ -69,7 +69,7 @@ if(isset($_POST['sub'])){
                         <input type="submit" value="submit" name="sub">
                     </td>
                     <td>
-                        <button><a href="login.php">Login</a></button>    
+                        <button><a href="loginTemplate.php">Login</a></button>    
                     </td>    
                 </tr>
             </table>
